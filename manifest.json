@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "wiki-tools",
+  "version": "1.3",
+  "description": "wiki辅助功能",
+  "author": "bear",
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "contextMenus", 
+    "tabs", 
+    "notifications", 
+    "webRequest", 
+    "webRequestBlocking", 
+    "storage", 
+    "http://*/*", 
+    "https://*/*" 
+  ],
+  "content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["js/jquery-3.3.1.min.js", "js/content-script.js"],
+			"css": ["css/custom.css"],
+			"run_at": "document_start"
+		}
+  ],
+  "web_accessible_resources": [
+    "js/inject.js",
+    "js/comm.js",
+    "js/jquery-3.3.1.min.js"
+  ]
+}
