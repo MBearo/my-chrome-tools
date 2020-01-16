@@ -8,4 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },100)
   }
+  if(location.host==='google.com'){
+    document.querySelectorAll('.xA33Gc').forEach(i=>i.style.display='none')
+  }
 });
