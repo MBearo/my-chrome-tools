@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },100)
   }
-  if(location.host==='www.google.com'){
+  if(location.host==='www.google.com'||location.host==='www.google.com.hk'){
     setTimeout(_=>{
       document.querySelectorAll('.H9lube').forEach(i=>i.style.display='none')
     })
