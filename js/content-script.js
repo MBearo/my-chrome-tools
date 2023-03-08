@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   if(location.host==='www.google.com'){
     setTimeout(_=>{
-      document.querySelectorAll('.xA33Gc').forEach(i=>i.style.display='none')
+      document.querySelectorAll('.H9lube').forEach(i=>i.style.display='none')
     })
   }
 });
